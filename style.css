@@ -1,48 +1,46 @@
 body {
   margin: 0;
 }
-
 .navbar {
-  overflow: hidden;
   background-color: black;
-  width: 100%;
+  overflow: hidden;
 }
+
 .navbar a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 17px 17px;
-  float: right;
+  padding: 14px 15px;
   font-size: 20px;
-}
-
-#nology {
-  float: left;
-  background-color: #228B22;
   color: white;
-  width: 10%;
   text-align: center;
+  float: right;
+}
+a {
+  text-decoration: none;
 }
 
-.panel-one, .panel-two, .panel-three {
+.flex-container, .panel {
   border: 2px solid;
-  padding: 1em;
-  margin: 10px;
-  width: 1040px;
-  float: left;
-  font-size: 15px;
-  margin-right: 30px;
 }
 
-section {
-  border: 2px solid;
-  padding: 1em;
-  margin: 10px;
-  height: 600px;
-  width: 260px;
+}
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  font-size: 14px;
+  flex-direction: column;
+}
+
+aside {
+  font-size: 16px;
+  border: 2px solid;
+  padding: 1em;
+  margin: 5px;
+  width: 23%;
+}
+
+.flex-container-aside {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+
 }
 
 
