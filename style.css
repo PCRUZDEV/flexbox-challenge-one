@@ -1,22 +1,44 @@
-body {
+/* Overriding all the default style and setting padding and margin to 0 */
+* {
   margin: 0;
 }
+
+/* sets the background color of navbar */
 .navbar {
   background-color: black;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* nav links using flexbox to create a row */
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.navbar a {
-  padding: 14px 15px;
-  font-size: 20px;
+/* targeting the nology text and background color as well as padding */
+.navbar .nology {
+  font-size: 22px;
   color: white;
-  text-align: center;
-  float: right;
-}
-a {
-  text-decoration: none;
+  background-color: green;
+  padding: 18px;
+  display: inline-block;
 }
 
+/* link text elements */
+.nav a {
+  color: white;
+  font-size: 22px;
+  padding: 100px;
+}
+
+/* removes underline and bullets from text */
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+/*
 .flex-container, .panel {
   border: 2px solid;
 }
