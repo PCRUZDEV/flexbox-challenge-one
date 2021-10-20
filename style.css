@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 /* nav links using flexbox to create a row */
 .nav {
   display: flex;
@@ -23,7 +24,6 @@
   color: white;
   background-color: green;
   padding: 18px;
-  display: inline-block;
 }
 
 /* link text elements */
@@ -34,35 +34,54 @@
 }
 
 /* removes underline and bullets from text */
-li, a {
+li,
+a {
   text-decoration: none;
   list-style: none;
 }
-/*
-.flex-container, .panel {
-  border: 2px solid;
+
+/* on hover navbar changes color */
+.navbar:hover {
+  background-color: green;
 }
 
+/* on hover links change color */
+a:hover {
+  color: black;
+}
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
+.main-panel {
+  border: 2px solid;
+  width: 950px;
+  margin: 10px;
+  float: left;
+}
+
+.text {
+  padding-left: 80px;
+  margin: 10px;
+}
+
+h2 {
+  padding: 5px;
+  margin: 5px;
 }
 
 aside {
-  font-size: 16px;
   border: 2px solid;
-  padding: 1em;
-  margin: 5px;
-  width: 23%;
-}
-
-.flex-container-aside {
+  width: 450px;
+  margin-top: 10px;
+  height: 459px;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: space-around;
-
+  flex-wrap: wrap;
 }
 
+h3 {
+  font-size: 26px;
+  padding-top: 10px;
+  padding: 10px;
+}
 
+.right-panel-text {
+  padding: 10px;
+}
